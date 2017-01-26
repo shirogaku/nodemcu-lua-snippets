@@ -1,0 +1,23 @@
+{
+  "name": "nodemcu-lua-snippets",
+  "main": "./lib/nodemcu-lua-snippets",
+  "version": "0.1.0",
+  "description": "Snippets for NodeMCU Lua script development. This project is under development.",
+  "keywords": [
+	"snippets",
+    "nodemcu",
+    "lua",
+    "esp8266"
+  ],
+  "repository": {
+	"type" : "git",
+	"url" : "https://github.com/shirogaku/nodemcu-lua-snippets"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "dependencies": {
+	"language-lua": "0.9.7"
+  }
+}
