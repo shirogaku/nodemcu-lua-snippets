@@ -1,0 +1,13 @@
+'.source.lua':
+  'BMP085 initialize':
+    'prefix': 'bmp085in'
+    'body': 'bmp085.init(${1:sca}, ${2:scl})'
+  'BMP085 get tempurature':
+    'prefix': 'bmp085temp'
+    'body': 'bmp085.temperature()'
+  'BMP085 get pressure':
+    'prefix': 'bmp085pres'
+    'body': 'bmp085.pressure(${0:oversampling_rate})'
+  'BMP085 get raw pressure':
+    'prefix': 'bmp085rpres'
+    'body': 'bmp085.pressure_raw(${0:oversampling_rate})'

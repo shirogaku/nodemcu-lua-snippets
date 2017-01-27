@@ -1,0 +1,13 @@
+'.source.lua':
+  'encoder to base64':
+    'prefix': 'enctobase64'
+    'body': 'encoder.toBase64(${0:binary})'
+  'encoder from base64':
+    'prefix': 'encfrombase64'
+    'body': 'encoder.fromBase64(${0:base64})'
+  'encoder to hex':
+    'prefix': 'enctohex'
+    'body': 'encoder.toHex(${0:binary})'
+  'encoder from hex':
+    'prefix': 'encfromhex'
+    'body': 'encoder.fromHex(${0:hexstring})'

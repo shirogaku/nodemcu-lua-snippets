@@ -1,0 +1,19 @@
+'.source.lua':
+  'dht read':
+    'prefix': 'dhtre'
+    'body': 'dht.read(${0:pin})'
+  'dht read DHT11 sensor':
+    'prefix': 'dhtre11'
+    'body': 'dht.read11(${0:pin})'
+  'dht read non-DHT11 sensor':
+    'prefix': 'dhtrexx'
+    'body': 'dht.readxx(${0:pin})'  
+  'dht ok constants':
+    'prefix': 'dhtok'
+    'body': 'dht.OK'
+  'dht error checksum constants':
+    'prefix': 'dhterrchecksum'
+    'body': 'dht.ERROR_CHECKSUM'
+  'dht error timeout constants':
+    'prefix': 'dhterrtimeout'
+    'body': 'dht.ERROR_TIMEOUT'

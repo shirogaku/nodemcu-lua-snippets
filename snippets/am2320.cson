@@ -1,0 +1,7 @@
+'.source.lua':
+  'AM2320 initialize':
+    'prefix': 'am2320in'
+    'body': 'am2320.init(${1:sda}, ${2:scl})'
+  'AM2320 read':
+    'prefix': 'am2320re'
+    'body': 'am2320.read()'

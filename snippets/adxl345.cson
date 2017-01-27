@@ -1,0 +1,7 @@
+'.source.lua':
+  'ADXL345 initialize':
+    'prefix': 'adxl345in'
+    'body': 'adxl345.init(${1:sda}, ${2:scl})'
+  'ADXL345 read':
+    'prefix': 'adxl345re'
+    'body': 'adxl345.read()'

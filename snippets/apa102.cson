@@ -1,0 +1,4 @@
+'.source.lua':
+  'APA102 write':
+    'prefix': 'apa102w'
+    'body': 'apa102.write(${1:data_pin}, ${2:clock_pin}, ${3:string})'

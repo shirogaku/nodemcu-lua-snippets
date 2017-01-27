@@ -1,0 +1,25 @@
+'.source.lua':
+  'BME280 get altitude':
+    'prefix': 'bme280alt'
+    'body': 'bme280.altitude(${1:p}, ${2:qnh})'
+  'BME280 get barometer value':
+    'prefix': 'bme280ba'
+    'body': 'bme280.boro()'
+  'BME280 get dew point':
+    'prefix': 'bme280dew'
+    'body': 'bme280.dewpoint(${1:h}, ${2:t})'
+  'BME280 get humidlity':
+    'prefix': 'bme280hum'
+    'body': 'bme280.humi()'
+  'BME280 initialize':
+    'prefix': 'bme280in'
+    'body': 'bme280.init(${1:sda}, ${2:scl})'
+  'BME280 QFE to QNH':
+    'prefix': 'bme280q2q'
+    'body': 'bme280.qfe2qnh(${1:p}, ${2:altitude})'
+  'BME280 forced mode':
+    'prefix': 'bme280str'
+    'body': 'bme280.startreadout(${1:delay}, ${2:callback})'
+  'BME280 get tempurature':
+    'prefix': 'bme280temp'
+    'body': 'bme280.temp()'

@@ -1,0 +1,7 @@
+'.source.lua':
+  'CJSON encode':
+    'prefix': 'cjsonen'
+    'body': 'cjson.encode(${0:table})'
+  'CJSON decode':
+    'prefix': 'cjsonde'
+    'body': 'cjson.decide(${0:string})'

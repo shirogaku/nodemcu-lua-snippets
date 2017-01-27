@@ -1,0 +1,55 @@
+'.source.lua':
+  'CoAP create client':
+    'prefix': 'coapcc'
+    'body': 'coap.Client()'
+  'CoAP create server':
+    'prefix': 'coapcs'
+    'body': 'coap.Server()'
+  'CoAP client get':
+    'prefix': 'coapcget'
+    'body': 'get(${1:type}, ${2:uri}, ${3:payload})'
+  'CoAP client put':
+    'prefix': 'coapcput'
+    'body': 'put(${1:type}, ${2:uri}, ${3:payload})'
+  'CoAP client post':
+    'prefix': 'coapcpost'
+    'body': 'post(${1:type}, ${2:uri}, ${3:payload})'
+  'CoAP client delete':
+    'prefix': 'coapcdel'
+    'body': 'delete(${1:type}, ${2:uri}, ${3:payload})'
+  'CoAP server listen':
+    'prefix': 'coapslis'
+    'body': 'listen(${1:port}, ${2:ip})'
+  'CoAP server close':
+    'prefix': 'coapsclo'
+    'body': 'close()'
+  'CoAP server register variable':
+    'prefix': 'coapsrv'
+    'body': 'var("${1:name}", ${2:content_type})'
+  'CoAP server register function':
+    'prefix': 'coapsrf'
+    'body': 'func("${1:name}", ${2:content_type})'  
+  'CoAP CON request constants':
+    'prefix': 'coapcon'
+    'body': 'coap.CON'
+  'CoAP NON request constants':
+    'prefix': 'coapnon'
+    'body': 'coap.NON'
+  'CoAP text type constants':
+    'prefix': 'coaptext'
+    'body': 'coap.TEXT_PLAIN'
+  'CoAP link type constants':
+    'prefix': 'coaplink'
+    'body': 'coap.LINKFORMAT'
+  'CoAP xml type constants':
+    'prefix': 'coapxml'
+    'body': 'coap.XML'
+  'CoAP octet stream type constant':
+    'prefix': 'coapstream'
+    'body': 'coap.OCTET_STREAM'
+  'CoAP exi type constant':
+    'prefix': 'coapexi'
+    'body': 'coap.EXI'
+  'CoAP json type constant':
+    'prefix': 'coapjson'
+    'body': 'coap.JSON'

@@ -1,0 +1,10 @@
+'.source.lua':
+  'enduser set manual':
+    'prefix': 'enduserman'
+    'body': 'enduser_setup.manual(${0:bool})'
+  'enduser start':
+    'prefix': 'enduserstart'
+    'body': 'enduser_setup.start(${1:onConnected_callback}, ${2:onError_callback}, ${3:onDebug_callback})'
+  'enduser stop':
+    'prefix': 'enduserstop'
+    'body': 'enduser_setup.stop()'
