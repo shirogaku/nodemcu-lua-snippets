@@ -1,0 +1,7 @@
+'.source.lua':
+  'HX711 initialize':
+    'prefix': 'hx711in'
+    'body': 'hx711.init(${1:clk}, ${2:data})'
+  'HX711 read':
+    'prefix': 'hx711re'
+    'body': 'hx711.read(${0:mode})'

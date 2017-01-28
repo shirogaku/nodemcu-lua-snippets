@@ -2,7 +2,7 @@
   "name": "nodemcu-lua-snippets",
   "main": "./lib/nodemcu-lua-snippets",
   "version": "0.1.0",
-  "description": "Snippets for NodeMCU Lua script development. This project is under development.",
+  "description": "Snippets for NodeMCU Lua script.",
   "keywords": [
 	"snippets",
     "nodemcu",

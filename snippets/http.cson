@@ -1,0 +1,16 @@
+'.source.lua':
+  'HTTP delete request':
+    'prefix': 'httpdel'
+    'body': 'http.delete(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+  'HTTP get request':
+    'prefix': 'httpget'
+    'body': 'http.get(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+  'HTTP post request':
+    'prefix': 'httppost'
+    'body': 'http.post(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+  'HTTP put request':
+    'prefix': 'httpput'
+    'body': 'http.put(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+  'HTTP custom request':
+    'prefix': 'httpreq'
+    'body': 'http.request(${1:url}, ${2:method}, ${3:headers}, ${4:body}, ${5:callback})'

@@ -1,0 +1,7 @@
+'.source.lua':
+  'L3G4200D initialize':
+    'prefix': 'l3g4200din'
+    'body': 'l3g4200d.init(${1:sda}, ${2:scl})'
+  'L3G4200D read':
+    'prefix': 'l3g4200dre'
+    'body': 'l3g4200d.read()'

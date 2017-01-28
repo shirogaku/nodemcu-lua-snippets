@@ -1,0 +1,55 @@
+'.source.lua':
+  'FILE change directory':
+    'prefix': 'filecd'
+    'body': 'file.chdir("${0:dir}")'
+  'FILE check exists':
+    'prefix': 'fileexists'
+    'body': 'file.exists("${0:filename}")'
+  'FILE format':
+    'prefix': 'fileformat'
+    'body': 'file.format()'
+  'FILE get flash address/size':
+    'prefix': 'filefscfg'
+    'body': 'file.fscfg()'
+  'FILE get file system info':
+    'prefix': 'filefsinfo'
+    'body': 'file.fsinfo()'
+  'FILE get file list':
+    'prefix': 'filelist'
+    'body': 'file.list()'
+  'FILE mount SD':
+    'prefix': 'filemount'
+    'body': 'file.mount(${1:ldrv}, ${2:pin})'
+  'FILE on event':
+    'prefix': 'fileon'
+    'body': 'file.on(${1:event}, ${2:callback})'
+  'FILE open':
+    'prefix': 'fileop'
+    'body': 'file.open(${1:filename}, ${2:mode})'
+  'FILE remove':
+    'prefix': 'filerm'
+    'body': 'file.remove(${0:filename})'
+  'FILE rename':
+    'prefix': 'filerename'
+    'body': 'file.rename(${1:oldname}, ${2:newname})'
+  'FILE close':
+    'prefix': 'fileclose'
+    'body': 'file.close()'
+  'FILE flush':
+    'prefix': 'fileflush'
+    'body': 'file.flush()'
+  'FILE read':
+    'prefix': 'filere'
+    'body': 'file.read(${0:n_or_char})'
+  'FILE readline':
+    'prefix': 'filereline'
+    'body': 'file.readline()'
+  'FILE seek':
+    'prefix': 'fileseek'
+    'body': 'file.seek(${1:whence}, ${2:offset})'
+  'FILE write':
+    'prefix': 'filewr'
+    'body': 'file.write(${0:string})'
+  'FILE write line':
+    'prefix': 'filewrl'
+    'body': 'file.writeline(${0:string})'

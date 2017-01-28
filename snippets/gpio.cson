@@ -1,0 +1,25 @@
+'.source.lua':
+  'GPIO set mode':
+    'prefix': 'gpiomo'
+    'body': 'gpio.mode(${1:pin}, ${2:mode}, ${2:pullup})'
+  'GPIO read':
+    'prefix': 'gpiore'
+    'body': 'gpio.read(${0:pin})'
+  'GPIO serialize output':
+    'prefix': 'gpioser'
+    'body': 'gpio.serialize(${1:pin}, ${2:start_level}, ${3:delay_times}, ${4:cycle_num}, ${5:callback})'
+  'GPIO interrupt trigger':
+    'prefix': 'gpiointtri'
+    'body': 'gpio.trig(${1:pin}, ${2:type}, ${3:callback})'
+  'GPIO write':
+    'prefix': 'gpiowr'
+    'body': 'gpio.write(${1:pin}, ${2:level})'
+  'GPIO high constants':
+    'prefix': 'gpiohi'
+    'body': 'gpio.HIGH'
+  'GPIO low constants':
+    'prefix': 'gpiolo'
+    'body': 'gpio.LOW'
+  'GPIO output constant':
+    'prefix': 'gpioout'
+    'body': 'gpio.OUTPUT'
