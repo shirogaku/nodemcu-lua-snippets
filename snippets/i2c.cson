@@ -1,27 +1,28 @@
 '.source.lua':
   'I2C address setup':
     'prefix': 'i2caddr'
-    'body': 'i2c.address(${1:id=0}, ${2:device_addr}, ${3:direction})'
+    'body': 'i2c.address(${1:id}, ${2:device_addr}, ${3:direction})$0'
   'I2C read':
     'prefix': 'i2cre'
-    'body': 'i2c.read(${1:id=0}, ${2:len})'
+    'body': 'i2c.read(${1:id}, ${2:len})$0'
   'I2C initialize/setup':
     'prefix': 'i2csetup'
-    'body': 'i2c.setup(${1:id=0}, ${2:sda}, ${3:scl}, ${4:speed=i2c.SLOW})'
+    'body': 'i2c.setup(${1:id}, ${2:sda}, ${3:scl}, ${4:speed})$0'
   'I2C start':
     'prefix': 'i2csta'
-    'body': 'i2c.start(${0:id=0})'
+    'body': 'i2c.start(${1:id})$0'
   'I2C stop':
     'prefix': 'i2csto'
-    'body': 'i2c.stop(${0:id=0})'
+    'body': 'i2c.stop(${1:id})$0'
   'I2C write':
     'prefix': 'i2cwr'
-    'body': 'i2c.write(${1:id=0}, ${2:data})'
+    'body': 'i2c.write(${1:id}, ${2:data})$0'
   'I2C transmitter constants':
     'prefix': 'i2ctrans'
-    'body': 'i2c.TRANSMITTER'
+    'body': 'i2c.TRANSMITTER$0'
   'I2C receiver constants':
     'prefix': 'i2crecv'
+    'body': 'i2c.RECEIVER$0'
   'I2C slow constants':
     'prefix': 'i2cslow'
-    'body': 'i2c.SLOW'
+    'body': 'i2c.SLOW$0'

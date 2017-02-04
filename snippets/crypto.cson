@@ -1,37 +1,37 @@
 '.source.lua':
   'crypto encrypt':
     'prefix': 'crypten'
-    'body': 'crypto.encrypt(${1:algo}, ${2:key}, ${3:plain}, ${4:iv})'
+    'body': 'crypto.encrypt(${1:algo}, ${2:key}, ${3:plain}${4:, ${5:iv}})$0'
   'crypto decrypt':
     'prefix': 'cryptde'
-    'body': 'crypto.decrypt(${1:algo}, ${2;key}, ${3:cipher}, ${4:iv)'
+    'body': 'crypto.decrypt(${1:algo}, ${2:key}, ${3:cipher}${4:, ${5:iv}})$0'
   'crypto file hash':
     'prefix': 'cryptfhash'
-    'body': 'crypto.fhash(${1:algo}, ${2:filename})'
+    'body': 'crypto.fhash(${1:algo}, ${2:filename})$0'
   'crypto hash':
     'prefix': 'crypthash'
-    'body': 'crypto.hash(${1:algo}, ${2:string})'
+    'body': 'crypto.hash(${1:algo}, ${2:string})$0'
   'crypto new hash':
     'prefix': 'cryptnhash'
-    'body': 'crypto.new_hash(${0:algo})'
+    'body': 'crypto.new_hash(${1:algo})$0'
   'crypto update hash/hmac':
     'prefix': 'cryptup'
-    'body': ':update("${0:string}")'
+    'body': ':update("${1:string}")$0'
   'crypto finalize hash/hmac':
     'prefix': 'cryptfin'
-    'body': ':finalize()'
+    'body': ':finalize()$0'
   'crypto hmac':
     'prefix': 'crypthmac'
-    'body': 'crypto.hmac(${1:algo}, ${2:string}, ${3:key})'
+    'body': 'crypto.hmac(${1:algo}, ${2:string}, ${3:key})$0'
   'crypto new hmac':
     'prefix': 'cryptnhmac'
-    'body': 'crypto.new_hmac(${1:algo}, ${2:key})'
+    'body': 'crypto.new_hmac(${1:algo}, ${2:key})$0'
   'crypto mask':
     'prefix': 'cryptmask'
-    'body': 'crypto.mask(${1:message}, ${2:mask})'
+    'body': 'crypto.mask(${1:message}, ${2:mask})$0'
   'crypto to base64':
     'prefix': 'cryptobase64'
-    'body': 'crypto.toBase64(${0:binary})'
+    'body': 'crypto.toBase64(${1:binary})$0'
   'crypto to hex':
     'prefix': 'cryptohex'
-    'body': 'crypto.toHex(${0:binary})'
+    'body': 'crypto.toHex(${1:binary})$0'

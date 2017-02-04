@@ -1,0 +1,25 @@
+'.source.lua':
+  'NODE get boot reason':
+    'prefix': 'nodebootrea'
+    'body': 'rawcode, reason${1:, ${2:execause}${3:, ${4:epc1}}${5:, ${6:epc2}}${7:, ${8:epc3}}${9:, ${10:exevaddr}}${11:, ${12:depc}}}  = node.bootreason()$0'
+  'NODE get chip id':
+    'prefix': 'nodechip'
+    'body': 'node.chipid()$0'
+  'NODE compile':
+    'prefix': 'nodecompile'
+    'body': 'node.compile("${1:filename}")$0'
+  'NODE deep sleep':
+    'prefix': 'nodeds'
+    'body': 'node.dsleep(${1:us}${2:, ${3:option}})$0'
+  'NODE get flash id':
+    'prefix': 'nodeflashid'
+    'body': 'node.flashid()$0'
+  'NODE get flash size':
+    'prefix': 'nodeflashsi'
+    'body': 'node.flashsize()$0'
+  'NODE get heap':
+    'prefix': 'nodeheap'
+    'body': 'node.heap()$0'
+  'NODE get info':
+    'prefix': 'nodeinfo'
+    'body': 'majorVer, minorVer, devVer, chipid, flashid, flashsize, flashmode, flashspeed = node.info()$0'

@@ -1,37 +1,37 @@
 '.source.lua':
   'BIT arithmeic right shift':
     'prefix': 'bitars'
-    'body': 'bit.arshift(${1:value}, ${2:shift})'
+    'body': 'bit.arshift(${1:value}, ${2:shift})$0'
   'BIT AND operation':
     'prefix': 'bitand'
-    'body': 'bit.band(${1:value1}, ${2:value2})'
+    'body': 'bit.band(${1:value1}, ${2:value2})$0'
   'BIT generate number with a 1 bit':
     'prefix': 'bitbit'
-    'body': 'bit.bit(${1:position})'
+    'body': 'bit.bit(${1:position})$0'
   'BIT NOT operation':
     'prefix': 'bitnot'
-    'body': 'bit.bnot(${1:value})'
+    'body': 'bit.bnot(${1:value})$0'
   'BIT OR operation':
     'prefix': 'bitor'
-    'body': 'bit.bor(${1:value1}, ${2:value2})'
+    'body': 'bit.bor(${1:value1}, ${2:value2})$0'
   'BIT XOR operation':
     'prefix': 'bitxor'
-    'body': 'bit.bxor(${1:value1}, ${2:value2})'
+    'body': 'bit.bxor(${1:value1}, ${2:value2})$0'
   'BIT clear':
     'prefix': 'bitclear'
-    'body': 'bit.clear(${1:value}, ${2:position})'
+    'body': 'bit.clear(${1:value}, ${2:position})$0'
   'BIT is clear':
     'prefix': 'biticlear'
-    'body': 'bit.isclear(${1:value}, ${2:position})'
+    'body': 'bit.isclear(${1:value}, ${2:position})$0'
   'BIT is set':
     'prefix': 'bitiset'
-    'body': 'bit.isset(${1:value}, ${2:position})'
+    'body': 'bit.isset(${1:value}, ${2:position})$0'
   'BIT left shift':
     'prefix': 'bitlsh'
-    'body': 'bit.lshift(${1:value}, ${2:shift})'
+    'body': 'bit.lshift(${1:value}, ${2:shift})$0'
   'BIT right shift':
     'prefix': 'bitrsh'
-    'body': 'bit.rshift(${1:value}, ${2:shift})'
+    'body': 'bit.rshift(${1:value}, ${2:shift})$0'
   'BIT set bit':
     'prefix': 'bitset'
-    'body': 'bit.set(${1:value}, ${2:position})'
+    'body': 'bit.set(${1:value}, ${2:position})$0'

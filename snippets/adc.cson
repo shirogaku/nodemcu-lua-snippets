@@ -1,16 +1,16 @@
 '.source.lua':
   'ADC read pin':
     'prefix': 'adcre'
-    'body': 'adc.read(${0:channel})'
+    'body': 'adc.read(${1:channel})$0'
   'ADC read system voltage':
     'prefix': 'adcrs'
-    'body': 'adc.readvdd33()'
+    'body': 'adc.readvdd33()$0'
   'ADC force init mode':
     'prefix': 'adcmin'
-    'body': 'adc.read_init_mode(${0:mode_value})'
+    'body': 'adc.read_init_mode(${1:mode_value})$0'
   'ADC init adc constants':
     'prefix': 'adcmadc'
-    'body': 'adc.INIT_ADC'
+    'body': 'adc.INIT_ADC$0'
   'ADC init vdd33 constants':
     'prefix': 'adcmvdd'
-    'body': 'adc.INIT_VDD33'
+    'body': 'adc.INIT_VDD33$0'

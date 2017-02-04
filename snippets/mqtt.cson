@@ -1,0 +1,25 @@
+'.source.lua':
+  'MQTT create client':
+    'prefix': 'mqttcc'
+    'body': 'mqtt.Client(${1:clientid}, ${2:keepalive}${3:, $4:username}}${5:, ${6:password}}${5:, ${6:cleansession}})$0'
+  'MQTT close connection':
+    'prefix': 'mqttclo'
+    'body': 'close()$0'
+  'MQTT connect':
+    'prefix': 'mqttcon'
+    'body': 'connect(${1:host}${2:, ${3:port}}${4:, ${5:secure}}${6:, ${7:autoreconnect}}${8:, ${9:function(client)\r\n\t ${10:...established_callback...}\r\nend)}}${11:, ${12:function(client, reason)\r\n\t ${13:...failure_callback...}\r\nend)}})$0'
+  'MQTT lwt':
+    'prefix': 'mqttlwt'
+    'body': 'lwt(${1:topic}, ${2:message}${3:, ${4:qos}}${5:, ${6:retain}})$0'
+  'MQTT register on event':
+    'prefix': 'mqtton'
+    'body': 'on("${1:event}"${2:, ${3:callback}})$0'
+  'MQTT publish':
+    'prefix': 'mqttpub'
+    'body': 'publish(${1:topic}, ${2:payload}, ${3:qos}, ${4:retain}, ${5:PUBACK_callback})$0'
+  'MQTT subscribe':
+    'prefix': 'mqttsub'
+    'body': 'subscribe(${1:topic}, ${2:qos}, ${3:sub_success_callback})$0'
+  'MQTT unsubscribe':
+    'prefix': 'mqttunsub'
+    'body': 'unsubscribe(${1:topic}, ${2:unsub_success_callback})$0'

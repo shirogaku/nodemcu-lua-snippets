@@ -1,0 +1,61 @@
+'.source.lua':
+  'NET create connection':
+    'prefix': 'netcc'
+    'body': 'net.createConnection(${1:type}, ${2:secure})$0'
+  'NET create server':
+    'prefix': 'netcv'
+    'body': 'net.createServer(${1:type}, ${2:timeout})$0'
+  'NET create udp socket':
+    'prefix': 'netudpsoc'
+    'body': 'net.createUDPSocket()$0'
+  'NET server/socket/udp close':
+    'prefix': 'netclo'
+    'body': 'close()$0'
+  'NET join multicast':
+    'prefix': 'netmultijoin'
+    'body': 'net.multicastJoin(${1:if_ip}, ${2:multicast_ip})$0'
+  'NET leave multicast':
+    'prefix': 'netmultilea'
+    'body': 'net.multicastLeave(${1:if_ip}, ${2:multicast_ip})$0'
+  'NET server listen':
+    'prefix': 'netservlis'
+    'body': 'listen(${1:port}${2:, ${3:ip}}${4:, ${5:function(conn)\r\n\t${6:...callback...} \r\nend)}})$0'
+  'NET server/socket/udp get address':
+    'prefix': 'netgetaddr'
+    'body': 'getaddr()$0'
+  'NET socket connect':
+    'prefix': 'netsoccon'
+    'body': 'connect(${1:port}, ${2:ip|domain})$0'
+  'NET socket/udp resolve dns':
+    'prefix': 'netsocdns'
+    'body': 'dns(${1:domain},${2:function(conn, ip)\r\n\t${3:...callback...} \r\nend)})$0'
+  'NET socket get peer':
+    'prefix': 'netsocpeer'
+    'body': 'getpeer()$0'
+  'NET socket hold':
+    'prefix': 'netsochold'
+    'body': 'hold()$0'
+  'NET socket/udp on event':
+    'prefix': 'neton'
+    'body': 'on("${1:event}", ${2:function(sck, c)\r\n\t${3:...callback...} \r\nend)})$0'
+  'NET socket send':
+    'prefix': 'netsocsend'
+    'body': 'send(${1:string}, ${2:function(sent)\r\n\t${3:...callback...} \r\n})$0'
+  'NET socket unhold':
+    'prefix': 'netsocunhold'
+    'body': 'unhold()$0'
+  'NET udp listen':
+    'prefix': 'netudplis'
+    'body': 'listen()$0'
+  'NET udp send':
+    'prefix': 'netudpsend'
+    'body': 'send(${1:port}, ${2:ip}, ${3:data})$0'
+  'NET dns resolve':
+    'prefix': 'netdns'
+    'body': 'net.dns.resolve(${1:host}, ${2:function(sk, ip)\r\n\t${3:...callback...} \r\nend)})$0'
+  'NET dns get dns server':
+    'prefix': 'netdnsget'
+    'body': 'net.dns.getdnsserver(${1:dns_index)$0'
+  'NET dns set dns server':
+    'prefix': 'netdnsset'
+    'body': 'net.dns.setdnsserver(${1:dns_ip_addr, ${2:dns_index}})$0'

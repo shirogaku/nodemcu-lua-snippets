@@ -1,7 +1,7 @@
 '.source.lua':
   'HMC5883L initialize':
     'prefix': 'hmc5883lin'
-    'body': 'hmc5883l.init(${1:sda}, ${2:scl})'
+    'body': 'hmc5883l.init(${1:sda}, ${2:scl})$0'
   'HMC5883L read':
     'prefix': 'hmc5883lre'
-    'body': 'hmc5883l.read()'
+    'body': 'hmc5883l.read()$0'

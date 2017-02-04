@@ -12,6 +12,7 @@ Available modules snippets
 * bmp085
 * cjson
 * coap
+* cron
 * crypto
 * dht
 * encoder
@@ -23,3 +24,14 @@ Available modules snippets
 * hx711
 * I²C
 * l3g4200d
+* mDNS (Multicast DNS)
+* MQTT
+* net
+* node (Just a part of it. I will add more later.)
+
+If you want to use function in sub module, You must add : (colon) after a variable then type a prefix.
+
+Like this `(variable):(prefix)`
+
+Example:
+`mqttcc:mqttcon[Enter]` becomes `mqttcc:connect(host, port, secure, autoreconnect, established_callback, failure_callback)`

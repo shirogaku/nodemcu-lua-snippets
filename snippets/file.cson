@@ -1,55 +1,55 @@
 '.source.lua':
   'FILE change directory':
     'prefix': 'filecd'
-    'body': 'file.chdir("${0:dir}")'
+    'body': 'file.chdir("${1:dir}")$0'
   'FILE check exists':
     'prefix': 'fileexists'
-    'body': 'file.exists("${0:filename}")'
+    'body': 'file.exists("${1:filename}")$0'
   'FILE format':
     'prefix': 'fileformat'
-    'body': 'file.format()'
+    'body': 'file.format()$0'
   'FILE get flash address/size':
     'prefix': 'filefscfg'
-    'body': 'file.fscfg()'
+    'body': 'file.fscfg()$0'
   'FILE get file system info':
     'prefix': 'filefsinfo'
-    'body': 'file.fsinfo()'
+    'body': 'file.fsinfo()$0'
   'FILE get file list':
     'prefix': 'filelist'
-    'body': 'file.list()'
+    'body': 'file.list()$0'
   'FILE mount SD':
     'prefix': 'filemount'
-    'body': 'file.mount(${1:ldrv}, ${2:pin})'
+    'body': 'file.mount(${1:ldrv}${2, {3:pin}})$0'
   'FILE on event':
     'prefix': 'fileon'
-    'body': 'file.on(${1:event}, ${2:callback})'
+    'body': 'file.on(${1:event}, ${2:function()\r\n\t ...callback...\r\nend)})$0'
   'FILE open':
     'prefix': 'fileop'
-    'body': 'file.open(${1:filename}, ${2:mode})'
+    'body': 'file.open(${1:filename}, ${2:mode})$0'
   'FILE remove':
     'prefix': 'filerm'
-    'body': 'file.remove(${0:filename})'
+    'body': 'file.remove(${1:filename})$0'
   'FILE rename':
     'prefix': 'filerename'
-    'body': 'file.rename(${1:oldname}, ${2:newname})'
+    'body': 'file.rename(${1:oldname}, ${2:newname})$0'
   'FILE close':
-    'prefix': 'fileclose'
-    'body': 'file.close()'
+    'prefix': 'fileclo'
+    'body': 'file.close()$0'
   'FILE flush':
     'prefix': 'fileflush'
-    'body': 'file.flush()'
+    'body': 'file.flush()$0'
   'FILE read':
     'prefix': 'filere'
-    'body': 'file.read(${0:n_or_char})'
+    'body': 'file.read(${1:n_or_char})$0'
   'FILE readline':
     'prefix': 'filereline'
-    'body': 'file.readline()'
+    'body': 'file.readline()$0'
   'FILE seek':
     'prefix': 'fileseek'
-    'body': 'file.seek(${1:whence}, ${2:offset})'
+    'body': 'file.seek(${1:${2:whence}}${3:, ${4:offset}})$0'
   'FILE write':
     'prefix': 'filewr'
-    'body': 'file.write(${0:string})'
+    'body': 'file.write(${0:string})$0'
   'FILE write line':
     'prefix': 'filewrl'
-    'body': 'file.writeline(${0:string})'
+    'body': 'file.writeline(${0:string})$0'

@@ -1,0 +1,7 @@
+'.source.lua':
+  'MDNS register':
+    'prefix': 'mdnsreg'
+    'body': 'mdns.register(${1:hostname}${2:, ${3:attributes}})$0'
+  'MDNS close':
+    'prefix': 'mdnsclo'
+    'body': 'mdns.close()$0'

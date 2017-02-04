@@ -1,16 +1,16 @@
 '.source.lua':
   'HTTP delete request':
     'prefix': 'httpdel'
-    'body': 'http.delete(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+    'body': 'http.delete(${1:url}${2:, ${3:headers}}${4:, ${5:body}}${6:, ${7:function(code, data)\r\n\t ${8:...callback...}\r\nend)}})$0'
   'HTTP get request':
     'prefix': 'httpget'
-    'body': 'http.get(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+    'body': 'http.get(${1:url}${2:, ${3:headers}}${4:, ${5:function(code, data)\r\n\t ${8:...callback...}\r\nend)}})$0'
   'HTTP post request':
     'prefix': 'httppost'
-    'body': 'http.post(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+    'body': 'http.post(${1:url}${2:, ${3:headers}}${4:, ${5:body}}${6:, ${7:function(code, data)\r\n\t ${8:...callback...}\r\nend)}})$0'
   'HTTP put request':
     'prefix': 'httpput'
-    'body': 'http.put(${1:url}, ${2:headers}, ${3:body}, ${4:callback})'
+    'body': 'http.put(${1:url}${2:, ${3:headers}}${4:, ${5:body}}${6:, ${7:function(code, data)\r\n\t ${8:...callback...}\r\nend)}})$0'
   'HTTP custom request':
     'prefix': 'httpreq'
-    'body': 'http.request(${1:url}, ${2:method}, ${3:headers}, ${4:body}, ${5:callback})'
+    'body': 'http.request(${1:url}, "${2:method}", "${3:headers}", "${4:body}"${5:, ${6:function(code, data)\r\n\t ${7:...callback...}\r\nend)}}$0'
