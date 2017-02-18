@@ -4,7 +4,7 @@
     'body': 'gpio.mode(${1:pin}, ${2:mode}${3:, ${4:pullup}})$0'
   'GPIO read':
     'prefix': 'gpiore'
-    'body': 'gpio.read(${0:pin})$0'
+    'body': 'gpio.read(${1:pin})$0'
   'GPIO serialize output':
     'prefix': 'gpioser'
     'body': 'gpio.serialize(${1:pin}, ${2:start_level}, ${3:delay_times}${4:, ${5:cycle_num}}${6:, ${7:function()\r\n\t ${8:...callback...}\r\nend)}})$0'

@@ -23,3 +23,61 @@
   'NODE get info':
     'prefix': 'nodeinfo'
     'body': 'majorVer, minorVer, devVer, chipid, flashid, flashsize, flashmode, flashspeed = node.info()$0'
+  'NODE input':
+    'prefix': 'nodein'
+    'body': 'node.input(${1:payload})$0'
+  'NODE output':
+    'prefix': 'nodeout'
+    'body': 'node.output(${1:function(str)}, ${2:serial_debug})$0'
+  'NODE restart':
+    'prefix': 'noderestart'
+    'body': 'node.restart()$0'
+  'NODE restore':
+    'prefix': 'noderestore'
+    'body': 'node.restore()$0'
+  'NODE set cpu':
+    'prefix': 'nodesetcpu'
+    'body': 'node.setcpufreq(${1:speed})$0';
+  'NODE strip debug':
+    'prefix': 'nodestripde'
+    'body': 'node.stripdebug(${1:${2:level}, ${3:function}})$0'
+  'NODE os print':
+    'prefix': 'nodeosp'
+    'body': 'node.osprint(${1:enabled})$0'
+  'NODE get random':
+    'prefix': 'noderan'
+    'body': 'node.random(${1:${2:lower}, ${3:upper}})$0'
+  'NODE set egc':
+    'prefix': 'nodesetegc'
+    'body': 'node.egc.setmode(${1:${2:mode}, ${3:param}})$0'
+  'NODE task':
+    'prefix': 'nodetask'
+    'body': 'node.task.post(${1:${2:${3:task_priority},} ${4:function}})$0'
+  #Constants
+    'NODE cpu 80MHz constant':
+      'prefix': 'nodecpu80'
+      'body': 'node.CPU80MHZ$0'
+    'NODE cpu 160MHz constant':
+      'prefix': 'nodecpu160'
+      'body': 'node.CPU160MHZ$0'
+    'NODE egc not active':
+      'prefix': 'nodeegcnotac'
+      'body': 'node.egc.NOT_ACTIVE'
+    'NODE egc on alloc failure':
+      'prefix': 'nodeegconalloc'
+      'body': 'node.egc.ON_ALLOC_FAILURE'
+    'NODE egc on mem limit':
+      'prefix': 'nodeegconmem'
+      'body': 'node.egc.ON_MEM_LIMIT'
+    'NODE egc always':
+      'prefix': 'nodeegcalw'
+      'body': 'node.egc.ALWAYS'
+    'NODE task low priority':
+      'prefix': 'nodetasklow'
+      'body': 'node.task.LOW_PRIORITY'
+    'NODE task meduim priority':
+      'prefix': 'nodetaskmed'
+      'body': 'node.task.MEDUIM_PRIORITY'
+    'NODE task high priority':
+      'prefix': 'nodetaskhi'
+      'body': 'node.task.HIGH_PRIORITY'
